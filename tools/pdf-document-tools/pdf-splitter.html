@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Splitter - Extract Pages from PDF | MultiTool Universe</title>
+    
+    <meta name="description" content="Split a PDF file into multiple parts or extract specific pages for free. Easy to use online PDF page extractor.">
+    <meta name="keywords" content="pdf splitter, split pdf, extract pdf pages, pdf separator">
+
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script>const baseURL = "/MultiToolUniverse";</script>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div class="container">
+            <header class="page-header">
+                <h1>PDF Splitter</h1>
+                <p class="lead text-secondary">Extract specific pages or split a PDF into multiple files.</p>
+            </header>
+
+            <div class="tool-container">
+                <!-- File Upload Area -->
+                <div id="upload-area" class="text-center p-5 mb-4" style="border: 2px dashed var(--border-color); border-radius: 15px;">
+                    <i class="bi bi-file-earmark-arrow-up-fill display-1" style="color: var(--accent-color);"></i>
+                    <h3 class="mt-3">Drag & Drop a PDF file here</h3>
+                    <p class="text-secondary">or</p>
+                    <label for="file-input" class="btn btn-lg btn-primary">Select File</label>
+                    <input type="file" id="file-input" class="d-none" accept=".pdf">
+                </div>
+
+                <!-- Options Area -->
+                <div id="options-area" class="d-none">
+                    <h4 id="file-name-display" class="text-center mb-4"></h4>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <label for="page-range" class="form-label fs-5">Pages to Extract:</label>
+                            <input type="text" id="page-range" class="form-control form-control-lg" placeholder="e.g., 1-3, 5, 8-10">
+                            <div class="form-text text-secondary">
+                                Enter page numbers or ranges separated by commas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Button -->
+                <div class="text-center mt-4">
+                    <button id="splitBtn" class="btn btn-lg btn-submit" disabled>
+                        <i class="bi bi-scissors me-2"></i>Split PDF
+                    </button>
+                </div>
+                
+                <!-- Output/Download Area -->
+                <div id="output-section" class="mt-4 text-center d-none">
+                    <h4>Your file is ready!</h4>
+                    <a id="download-link" class="btn btn-lg btn-success" href="#" download="split.pdf">
+                        <i class="bi bi-download me-2"></i>Download Split PDF
+                    </a>
+                </div>
+            </div>
+
+            <!-- AdSense Placeholder -->
+            <section class="ad-section text-center my-5">
+                <div class="ad-placeholder" style="width: 100%; min-height: 90px; background-color: var(--card-bg); border: 1px dashed var(--border-color); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); border-radius: 15px;">
+                    Ad Banner (e.g., 728x90)
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
